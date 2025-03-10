@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berserk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('images/hero-image.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            padding-top: 250px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .tab-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #8B0000;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .tab-button:hover, .tab-button.active {
+            background-color: #600000;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        .images-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .images-container img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .description {
+            max-width: 60%;
+            margin: 0 auto;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid white;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        .tab-content.art img {
+            display: block;
+            width: 80%;
+            margin: 50px auto;
+            border-radius: 8px;
+        }
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .media-container iframe {
+            width: 48%;
+            height: 560px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+      <h1>Berserk</h1>
+    </div>
+    <div class="tabs">
+      <button class="tab-button active">Themes</button>
+      <button class="tab-button">Characters</button>
+      <button class="tab-button">Story</button>
+      <button class="tab-button">Art</button>
+      <button class="tab-button">Imagery</button>
+      <button class="tab-button">Author</button>
+      <button class="tab-button">Influence</button>
+      <button class="tab-button">Fans</button>
+      <button class="tab-button">Collection</button>
+    </div>
+    <div class="content">
+        <!-- Themes Tab -->
+        <div class="tab-content active">
+        <div class="description">
+            <p>Berserk delves into the clash between fate and free will, where characters are forced to confront a predestined, 
+            often cruel path while striving to make their own choices. This struggle against destiny is intertwined with a profound perseverance, 
+            as individuals push through despair and adversity to assert their humanity and forge a different future.</p>
+        </div>
+        <div class="images-container">
+            <img src="images/themes/godhand.jpg">
+            <img src="images/themes/guts-flower.jpg">
+            <img src="images/themes/griffith-castle.jpg">
+            </div>
+        </div>
+        <!-- Characters Tab -->
+        <div class="tab-content">
+            <div class="description">
+                <p>Guts, Griffith and Casca are some of the most iconic characters in fiction, each defined by their unique struggles, loyalty, and complex personalities. 
+                    Guts' resilience, Griffith's ambition, and Casca's emotional depth have made them unforgettable. However, they are only a few of the many iconic characters that shape the world of Berserk.</p>
+            </div>
+            <div class="images-container">
+                <img src="images/characters/guts.jpg" alt="Guts">
+                <img src="images/characters/griffith.jpg" alt="Griffith">
+                <img src="images/characters/casca.jpg" alt="Casca">
+                <img src="images/characters/band.jpg" alt="Berserk of the Hawk">
+            </div>
+        </div>
+        <!-- Story Tab -->
+        <div class="tab-content">
+            <div class="description">
+                <p>The story of Berserk is a dark and complex journey that follows the life of Guts, a lone mercenary with a tragic past. It explores themes of fate, vengeance, 
+                    and the relentless pursuit of one's goals in a brutal world. From Guts' early days in the mercenary group, the Band of the Hawk, to his betrayal by Griffith and the ensuing quest for revenge, 
+                    the narrative unfolds in devastating twists and powerful moments of growth. 
+                    With epic battles, deep emotional conflict, and an exploration of human nature, the story beats of Berserk create an unforgettable tale of pain, survival, and the cost of ambition.</p>
+            </div>
+            <div class="images-container">
+                <img src="images/story/birth.jpg">
+                <img src="images/story/duel.jpg" alt="Duel">
+                <img src="images/story/eclipse.jpg" alt="Eclipse">
+            </div>
+        </div>
+        <!--Art Tab -->
+        <div class="tab-content art">
+            <div class="description">
+                <p>Berserk is renowned for its deeply intricate and masterful artwork, which plays a crucial role in bringing its 
+                    dark and gripping story to life. The detailed illustrations, often showcasing grotesque and awe-inspiring scenes, 
+                    capture the raw emotion and intensity of the narrative. One of the series' most striking features is its two-page spreads, 
+                    which offer breathtaking views of epic battles, sprawling landscapes, and the nightmarish horrors that Guts and his companions encounter. 
+                    These expansive visuals not only serve to immerse the reader but also elevate the emotional depth of the story.</p>
+            </div>
+            <img src="images/art/eclipse-detail.jpg" alt="Eclipse Detail">
+            <img src="images/art/femto-skullknight.jpg" alt="Femto SkullKnight">
+            <img src="images/art/dragon.jpg" alt="Dragon"> 
+        </div>
+        <!-- Imagery Tab -->
+        <div class="tab-content art">
+        <div class="description">
+            <p>Berserk uses evocative imagery and metaphorical representations to powerfully convey its themes and emotions. 
+                Through its intricate artwork and symbolic visuals, the series explores complex ideas such as fate, free will, and human suffering. 
+                The surreal and often haunting imagery serves as a vehicle for deeper philosophical exploration, allowing the audience to experience the emotional depth of the story. 
+                Each visual element is carefully crafted to reflect the symbolic and metaphorical currents that underpin the narrative, adding layers of meaning to the characters' journeys and the world they inhabit.</p>
+        </div>
+            <img src="images/imagery/banger.jpg">
+            <img src="images/imagery/guts-calm.jpg">
+        <div class="images-container">
+            <img src="images/imagery/griffith-speech.jpg">
+            <img src="images/imagery/brand.jpg">
+            <img src="images/imagery/guts-schierke-hat.jpg">
+            </div>
+        </div>
+        <!-- Author Tab -->
+        <div class="tab-content">
+        <div class="description">
+            <p>Kentaro Miura, the creator of Berserk, left an indelible mark on the world of manga and storytelling. 
+                His intricate art, profound themes, and deep emotional narratives elevated Berserk into a masterpiece of the medium. 
+                Miura's storytelling blended dark fantasy with philosophical questions, and his meticulous artwork brought these complex ideas to life with stunning detail. 
+                Tragically, Miura passed away in May 2021, leaving the series unfinished. His death deeply saddened fans and the broader manga community, 
+                as his contributions to the world of art and storytelling were immeasurable. His legacy lives on through Berserk, which continues to inspire countless creators and fans alike, 
+                cementing his place as one of the greatest manga artists in history.</p>
+        </div>
+        <div class="images-container">
+            <img src="images/author/miura1.jpg" alt="Kentaro Miura 1">
+            <img src="images/author/miura2.jpg" alt="Kentaro Miura 2">
+            </div>
+        </div>
+    <!-- Influence Tab -->
+    <div class="tab-content">
+        <div class="description">
+            <p>Since its debut, Berserk has had a profound influence on not only the world of manga but also on broader pop culture. Its dark themes, intricate artwork, and exploration of human suffering have inspired countless creators across various mediums, 
+                including video games, anime, and literature. Iconic works like Dark Souls, The Witcher, and Devil May Cry draw heavily from Berserk's gritty atmosphere and complex characters. 
+                Additionally, the themes of fate versus free will, as well as the exploration of trauma and redemption, have resonated with audiences worldwide, making Berserk a cornerstone of 
+                modern storytelling and a lasting influence in the realms of fantasy and horror.</p>
+        </div>
+        <div class="images-container">
+            <figure>
+                <img src="images/influence/blaid.jpg" alt="Blaid">
+                <figcaption>Blaid - Elden Ring</figcaption>
+            </figure>
+            <figure>
+                <img src="images/influence/hunters-mark.jpg" alt="Hunter's Mark">
+                <figcaption>Hunter's Mark - Bloodborne</figcaption>
+            </figure>
+            <figure>
+                <img src="images/influence/skeleton-wheel.jpg" alt="Skeleton Wheel">
+                <figcaption>Skeleton Wheel - Dark Souls</figcaption>
+            </figure>
+        </div>
+    </div>
+    <!-- Fans Tab -->
+    <div class="tab-content">
+        <div class="description">
+            The fans of Berserk are some of the most passionate and dedicated in the world of anime and manga. Many have expressed their love for the series through tattoos, with iconic symbols like the 
+            Brand of Sacrifice permanently etched onto their skin as a tribute to the story's dark and enduring themes. Fan art flourishes within the community, showcasing the immense admiration for Miura's work, 
+            as fans reinterpret and pay homage to the series in their own unique ways. The influence of Berserk has even extended into the music world, with bands like Brand of Sacrifice and the brutal deathcore group Slaughter to Prevail 
+            drawing inspiration from the series. The latter's song “Behelit” is a direct reference to one of the most recognizable symbols in Berserk, further solidifying the series' cultural impact.
+             Collectors also play a crucial role in the Berserk fandom, with rare editions, memorabilia, and art books being highly sought after by those who want to keep a piece of the series close to them. 
+             Berserk continues to inspire and unite its fans, creating a lasting legacy that transcends the pages of the manga.
+        </div>
+        <div class="images-container">
+            <img src="images/fans/tatoo1.jpg">
+            <img src="images/fans/tatoo2.jpg">
+        </div>
+        <div class="media-container">
+            <!-- YouTube Video -->
+            <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/0Cz-GLCQ1I0?si=X8aqDcBO0gPeiWIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <!-- Spotify Profile -->
+            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4d6Rawrese4OLF1zZCztod?utm_source=generator&theme=0" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+    <!-- My Collection Tab -->
+    <div class="tab-content">
+        <div class="description">
+            <p>I've got a few collectibles of my own, including somet-shirts and two deluxe edition volumes that are proudly displayed on my shelf. You know, just a small part of my growing collection.
+                And if you're feeling generous, donations are always accepted to help expand my collection...</p>
+        </div>
+        <div class="images-container">
+            <img src="images/collection/books.jpg">
+            <img src="images/collection/spread.jpg">
+            <img src="images/collection/shirts.jpg">
+        </div>
+        
+    </div>
+    <script>
+      // JavaScript code for tab switching
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+  
+        tabs.forEach((tab, index) => {
+          tab.addEventListener("click", function () {
+            tabs.forEach(t => t.classList.remove("active"));
+            tabContents.forEach(c => c.classList.remove("active"));
+  
+            tab.classList.add("active");
+            tabContents[index].classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title> {{designacao}} </title>
+{% endblock %}
+
+{% block body %}
+    <div class="card text-center">
+        <div class="card-header">
+          <h3> {{designacao}} </h3>
+        </div>
+        
+        <div class="card-body">
+          <h5 class="card-title"> Descrição </h5>
+          <p class="card-text"> {{descricao}} </p>
+        </div>
+
+        <div class="card-footer text-body-secondary">
+            <button type="button" class="btn btn-primary" onclick="history.back()"> Voltar </button>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title> {{designacao}} </title>
+{% endblock %}
+
+{% block body %}
+    <div class="card text-center">
+        <div class="card-header">
+          <h3> {{designacao}} </h3>
+        </div>
+        
+        <div class="card-body">
+          <h5 class="card-title"> Descrição </h5>
+          <p class="card-text"> {{descricao}} </p>
+        </div>
+
+        <div class="card-footer text-body-secondary">
+            <button type="button" class="btn btn-primary mx-3" onclick="history.back()"> Voltar </button>
+            <button type="button" onclick="delete_conceito('{{designacao}}')" class="btn btn-danger mx-3">Apagar</button>
+        </div>
+    </div>
+
+{% endblock %}
